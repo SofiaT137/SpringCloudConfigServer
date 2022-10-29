@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/people_system?allowPublicKeyRetrieval=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: root
+  mvc:
+    throw-exception-if-no-handler-found: true
+    static-path-pattern: /static
+  jpa:
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        show_sql: true
+        format_sql: true
+        hbm2ddl.auto: update
+
+
+
+
+
+
+
+
+
